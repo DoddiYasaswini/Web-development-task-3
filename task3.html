@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Task 3 - Responsive Quiz + API</title>
+  <link rel="stylesheet" href="task3.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Task 3: Responsive Quiz + API</h1>
+
+    <!-- ✅ QUIZ SECTION -->
+    <div class="quiz-section">
+      <h2>🧠 Mini Quiz</h2>
+
+      <div class="question">
+        <p>1. What does HTML stand for?</p>
+        <label><input type="radio" name="q1" value="a"> Hyper Text Markup Language</label><br>
+        <label><input type="radio" name="q1" value="b"> Home Tool Markup Language</label><br>
+        <label><input type="radio" name="q1" value="c"> Hyperlinks and Text Markup Language</label>
+      </div>
+
+      <div class="question">
+        <p>2. Which CSS property is used to change text color?</p>
+        <label><input type="radio" name="q2" value="a"> background-color</label><br>
+        <label><input type="radio" name="q2" value="b"> text-style</label><br>
+        <label><input type="radio" name="q2" value="c"> color</label>
+      </div>
+
+      <button onclick="submitQuiz()">Submit Quiz</button>
+      <div class="result" id="quizResult"></div>
+    </div>
+
+    <!-- ✅ API SECTION -->
+    <div class="api-section">
+      <h2>🌤️ Get a Random Joke</h2>
+      <button onclick="getJoke()">Get Joke</button>
+      <p id="jokeDisplay"></p>
+    </div>
+  </div>
+
+  <script src="task3.js"></script>
+</body>
+</html>
